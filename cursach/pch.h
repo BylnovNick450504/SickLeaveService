@@ -11,6 +11,6 @@
 
 #include "Doctor.h"
 #include "Patient.h"
-
+#include "SickList.h"
 
 #endif //PCH_H
