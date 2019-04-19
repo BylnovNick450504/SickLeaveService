@@ -9,6 +9,8 @@
 #ifndef PCH_H
 #define PCH_H
 
-// TODO: add headers that you want to pre-compile here
+#include "Doctor.h"
+#include "Patient.h"
+
 
 #endif //PCH_H
