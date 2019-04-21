@@ -2,9 +2,9 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
-#include "AbstractEntity.h"
+#include "Human.h"
 
-class Doctor : public AbstractEntity {
+class Doctor : public Human {
 private:
 	std::string specialization;
 public:

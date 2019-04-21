@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Doctor::Doctor(int id, string name, string specialization): AbstractEntity(id, name) {
+Doctor::Doctor(int id, string name, string specialization): Human(id, name) {
 	this->specialization = specialization;
 }
 
