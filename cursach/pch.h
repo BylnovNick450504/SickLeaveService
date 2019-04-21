@@ -13,5 +13,7 @@
 #include "Patient.h"
 #include "SickList.h"
 #include "AbstractEntity.h"
+#include "Human.h"
+#include "Disease.h"
 
 #endif //PCH_H
