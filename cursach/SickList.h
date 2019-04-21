@@ -5,5 +5,7 @@
 #include <string>
 
 class SickList : public AbstractEntity {
-
+private: 
+	int doctorId;
+	int patientId;
 };
