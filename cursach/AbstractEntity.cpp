@@ -17,7 +17,7 @@ void AbstractEntity::setId(int id) {
 }
 
 void AbstractEntity::printData() {
-	cout << "Id: " + this->id;
+	cout << "id: " << this->id << endl;
 }
 
 void AbstractEntity::enterData() {

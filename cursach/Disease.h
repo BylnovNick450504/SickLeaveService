@@ -14,4 +14,7 @@ public:
 	void setName(std::string name);
 	int getDiseaseCode();
 	void setDiseaseCode(int diseaseCode);
+
+	void enterData() override;
+	void printData() override;
 };
