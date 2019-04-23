@@ -2,7 +2,10 @@
 
 using namespace std;
 
-Disease::Disease(int id, string name, int diseaseCode) : AbstractEntity(id) {
+Disease::Disease(): AbstractEntity() {
+}
+
+Disease::Disease(int id, string name, int diseaseCode): AbstractEntity(id) {
 	this->name = name;
 	this->diseaseCode = diseaseCode;
 }

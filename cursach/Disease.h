@@ -9,6 +9,7 @@ private:
 	std::string name;
 	int diseaseCode;
 public:
+	Disease();
 	Disease(int id, std::string name, int diseaseCode);
 	std::string getName();
 	void setName(std::string name);

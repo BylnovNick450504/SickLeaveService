@@ -4,6 +4,9 @@
 
 using namespace std;
 
+AbstractEntity::AbstractEntity() {
+}
+
 AbstractEntity::AbstractEntity(int id) {
 	this->id = id;
 }

@@ -13,6 +13,7 @@ private:
 	tm dueDate;
 	std::string description;
 public:
+	SickList();
 	SickList(int id);
 	
 	int getDoctorId();
@@ -32,4 +33,7 @@ public:
 
 	std::string getDescription();
 	void setDescription(std::string description);
+
+	void enterData() override;
+	void printData() override;
 };

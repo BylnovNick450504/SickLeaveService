@@ -3,6 +3,35 @@
 #include <string>
 
 int main() {
-	Doctor d(1, "kek", "terapevt");
-    std::cout << "Hello World!\n"; 
+	AbstractEntity* a;
+	AbstractEntity a1;
+	Disease d;
+	Doctor doc;
+	Human h;
+	Patient p;
+	SickList s;
+
+	/*a = &a1;
+	a->enterData();
+	a->printData();
+
+	a = &d;
+	a->enterData();
+	a->printData();
+
+	a = &doc;
+	a->enterData();
+	a->printData();
+
+	a = &h;
+	a->enterData();
+	a->printData();*/
+
+	a = &p;
+	a->enterData();
+	a->printData();
+
+	a = &s;
+	a->enterData();
+	a->printData();
 }

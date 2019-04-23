@@ -10,6 +10,9 @@ private:
 	std::string email;
 	std::string phone;
 public:
+	Human();
+	Human(int id, std::string name);
+	
 	std::string getName();
 	void setName(std::string name);
 	std::string getEmail();
@@ -17,5 +20,6 @@ public:
 	std::string getPhone();
 	void setPhone(std::string phone);
 
-	Human(int id, std::string name);
+	void enterData() override;
+	void printData() override;
 };

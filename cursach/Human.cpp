@@ -5,7 +5,9 @@
 
 using namespace std;
 
-Human::Human(int id, string name) : AbstractEntity(id) {
+Human::Human(): AbstractEntity() {}
+
+Human::Human(int id, string name): AbstractEntity(id) {
 	this->name = name;
 }
 
@@ -31,4 +33,21 @@ string Human::getPhone() {
 
 void Human::setPhone(string phone) {
 	this->phone = phone;
+}
+
+void Human::printData() {
+	AbstractEntity::printData();
+	cout << "Name: " << name << endl;
+	cout << "Email: " << email << endl;
+	cout << "Phone: " << phone << endl;
+}
+
+void Human::enterData() {
+	AbstractEntity::enterData();
+	cout << "Please enter name: ";
+	cin >> name;
+	cout << "Please enter email: ";
+	cin >> email;
+	cout << "Please enter phone: ";
+	cin >> phone;
 }

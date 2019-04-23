@@ -8,7 +8,12 @@ class Doctor : public Human {
 private:
 	std::string specialization;
 public:
+	Doctor();
+	Doctor(int id, std::string name, std::string specialization);
+	
 	std::string getSpecialization();
 	void setSpecialization(std::string specialization);
-	Doctor(int id, std::string name, std::string specialization);
+	
+	void enterData() override;
+	void printData() override;
 };
