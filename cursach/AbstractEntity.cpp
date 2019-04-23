@@ -15,3 +15,12 @@ int AbstractEntity::getId() {
 void AbstractEntity::setId(int id) {
 	this->id = id;
 }
+
+void AbstractEntity::printData() {
+	cout << "Id: " + this->id;
+}
+
+void AbstractEntity::enterData() {
+	cout << "Please enter id: ";
+	cin >> this->id;
+}

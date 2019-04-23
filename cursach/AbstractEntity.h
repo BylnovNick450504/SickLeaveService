@@ -10,4 +10,7 @@ public:
 	int getId();
 	void setId(int id);
 	AbstractEntity(int id);
+
+	virtual void enterData();
+	virtual void printData();
 };
