@@ -28,3 +28,15 @@ void Doctor::printData() {
 	Human::printData();
 	cout << "Specialization: " << specialization << endl;
 }
+
+void Doctor::writeToFile(ostream& out) {
+	Human::writeToFile(out);
+	out << specialization << endl;
+	return;
+}
+
+void Doctor::readFromFile(istream& in) {
+	Human::readFromFile(in);
+	in >> specialization;
+	return;
+}
