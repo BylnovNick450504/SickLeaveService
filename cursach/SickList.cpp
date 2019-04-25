@@ -85,3 +85,31 @@ void SickList::enterData() {
 	cout << "Please enter description: ";
 	cin >> description;
 }
+
+void SickList::writeToFile(std::ostream& out) {
+	AbstractEntity::writeToFile(out);
+	out << doctorId << "\n"
+		<< patientId << "\n"
+		<< diseaseId << "\n"
+		<< startDate.tm_year << "\n"
+		<< startDate.tm_mon << "\n"
+		<< startDate.tm_mday << "\n"
+		<< dueDate.tm_year << "\n"
+		<< dueDate.tm_mon << "\n"
+		<< dueDate.tm_mday << "\n"
+		<< description << endl;
+}
+
+void SickList::readFromFile(std::istream& in) {
+	AbstractEntity::readFromFile(in);
+	in >> doctorId;
+	in >> patientId;
+	in >> diseaseId;
+	in >> startDate.tm_year;
+	in >> startDate.tm_mon;
+	in >> startDate.tm_mday;
+	in >> dueDate.tm_year;
+	in >> dueDate.tm_mon;
+	in >> dueDate.tm_mday;
+	in >> description;
+}

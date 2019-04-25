@@ -36,4 +36,7 @@ public:
 
 	void enterData() override;
 	void printData() override;
+
+	void writeToFile(std::ostream& out);
+	void readFromFile(std::istream& in);
 };
