@@ -51,3 +51,19 @@ void Human::enterData() {
 	cout << "Please enter phone: ";
 	cin >> phone;
 }
+
+void Human::writeToFile(ostream& out) {
+	AbstractEntity::writeToFile(out);
+	out << name << "\n"
+		<< email << "\n"
+		<< phone << endl;
+	return;
+}
+
+void Human::readFromFile(istream& in) {
+	AbstractEntity::readFromFile(in);
+	in >> name;
+	in >> email;
+	in >> phone;
+	return;
+}

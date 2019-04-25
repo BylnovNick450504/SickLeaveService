@@ -22,4 +22,7 @@ public:
 
 	void enterData() override;
 	void printData() override;
+
+	void writeToFile(std::ostream& out) override;
+	void readFromFile(std::istream& in) override;
 };

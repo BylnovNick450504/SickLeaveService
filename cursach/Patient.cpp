@@ -34,3 +34,17 @@ void Patient::enterData() {
 	cout << "Please enter passport number: ";
 	cin >> passportNumber;
 }
+
+void Patient::writeToFile(ostream& out) {
+	Human::writeToFile(out);
+	out << cardNumber << "\n"
+		<< passportNumber << endl;
+	return;
+}
+
+void Patient::readFromFile(istream& in) {
+	Human::readFromFile(in);
+	in >> cardNumber;
+	in >> passportNumber;
+	return;
+}

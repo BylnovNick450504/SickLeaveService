@@ -39,3 +39,17 @@ void Disease::printData() {
 	cout << "Disease name: " << name << endl;
 	cout << "Disease code: " << diseaseCode << endl;
 }
+
+void Disease::writeToFile(ostream& out) {
+	AbstractEntity::writeToFile(out);
+	out	<< name << "\n"
+		<< diseaseCode << endl;
+	return;
+}
+
+void Disease::readFromFile(istream& in) {
+	AbstractEntity::readFromFile(in);
+	in >> name;
+	in >> diseaseCode;
+	return;
+}
