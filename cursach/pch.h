@@ -16,4 +16,5 @@
 #include "Human.h"
 #include "Disease.h"
 #include "DiseaseService.h"
+#include "DataPool.h"
 #endif //PCH_H
