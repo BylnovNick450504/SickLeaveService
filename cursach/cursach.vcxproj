@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AbstractEntity.h" />
+    <ClInclude Include="DataPool.h" />
     <ClInclude Include="Disease.h" />
     <ClInclude Include="DiseaseService.h" />
     <ClInclude Include="Doctor.h" />
@@ -163,6 +164,7 @@
   <ItemGroup>
     <ClCompile Include="AbstractEntity.cpp" />
     <ClCompile Include="cursach.cpp" />
+    <ClCompile Include="DataPool.cpp" />
     <ClCompile Include="Disease.cpp" />
     <ClCompile Include="DiseaseService.cpp" />
     <ClCompile Include="Doctor.cpp" />
