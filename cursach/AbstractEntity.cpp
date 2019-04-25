@@ -20,10 +20,18 @@ void AbstractEntity::setId(int id) {
 }
 
 void AbstractEntity::printData() {
-	cout << "id: " << this->id << endl;
+	cout << "id: " << id << endl;
 }
 
 void AbstractEntity::enterData() {
 	cout << "Please enter id: ";
-	cin >> this->id;
+	cin >> id;
+}
+
+void AbstractEntity::writeToFile(ostream& out) {
+	out << id << endl;
+}
+
+void AbstractEntity::readFromFile(istream& in) {
+	in >> id;
 }
