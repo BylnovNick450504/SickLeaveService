@@ -1,37 +1,19 @@
 ﻿#include "pch.h"
 #include <iostream>
 #include <string>
+#include <fstream>
+
+using namespace std;
 
 int main() {
-	AbstractEntity* a;
-	AbstractEntity a1;
-	Disease d;
-	Doctor doc;
 	Human h;
-	Patient p;
-	SickList s;
-
-	/*a = &a1;
-	a->enterData();
-	a->printData();
-
-	a = &d;
-	a->enterData();
-	a->printData();
-
-	a = &doc;
-	a->enterData();
-	a->printData();
-
-	a = &h;
-	a->enterData();
-	a->printData();*/
-
-	a = &p;
-	a->enterData();
-	a->printData();
-
-	a = &s;
-	a->enterData();
-	a->printData();
+	Human h1;
+	ifstream in("d:/humans.txt");
+	// если открылся файл
+	if (in.is_open()) {
+		h.readFromFile(in);
+		h1.readFromFile(in);
+	}
+	h.printData();
+	h1.printData();
 }

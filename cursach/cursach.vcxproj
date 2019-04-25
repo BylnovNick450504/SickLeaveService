@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractEntity.h" />
     <ClInclude Include="Disease.h" />
+    <ClInclude Include="DiseaseService.h" />
     <ClInclude Include="Doctor.h" />
     <ClInclude Include="Human.h" />
     <ClInclude Include="Patient.h" />
@@ -163,6 +164,7 @@
     <ClCompile Include="AbstractEntity.cpp" />
     <ClCompile Include="cursach.cpp" />
     <ClCompile Include="Disease.cpp" />
+    <ClCompile Include="DiseaseService.cpp" />
     <ClCompile Include="Doctor.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="Patient.cpp" />

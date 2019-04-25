@@ -15,5 +15,5 @@
 #include "AbstractEntity.h"
 #include "Human.h"
 #include "Disease.h"
-
+#include "DiseaseService.h"
 #endif //PCH_H
