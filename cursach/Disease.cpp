@@ -40,6 +40,10 @@ void Disease::printData() {
 	cout << "Disease code: " << diseaseCode << endl;
 }
 
+void Disease::printBriefInfo() {
+	cout << getId() << " " << name << endl;
+}
+
 void Disease::writeToFile(ostream& out) {
 	AbstractEntity::writeToFile(out);
 	out	<< name << "\n"

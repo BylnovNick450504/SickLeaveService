@@ -14,6 +14,7 @@ public:
 
 	virtual void enterData();
 	virtual void printData();
+	virtual void printBriefInfo() = 0;
 
 	virtual void writeToFile(std::ostream& out);
 	virtual void readFromFile(std::istream& in);

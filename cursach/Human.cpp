@@ -42,6 +42,10 @@ void Human::printData() {
 	cout << "Phone: " << phone << endl;
 }
 
+void Human::printBriefInfo() {
+	cout << getId() << " " << name << endl;
+}
+
 void Human::enterData() {
 	AbstractEntity::enterData();
 	cout << "Please enter name: ";

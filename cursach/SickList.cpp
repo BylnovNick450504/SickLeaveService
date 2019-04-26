@@ -59,6 +59,10 @@ void SickList::printData() {
 	cout << "Please enter doctor id: " << doctorId << endl;
 }
 
+void SickList::printBriefInfo() {
+	cout << getId() << " " << endl;
+}
+
 void SickList::enterData() {
 	AbstractEntity::enterData();
 	cout << "Please enter doctor id: ";

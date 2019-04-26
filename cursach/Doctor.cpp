@@ -29,6 +29,10 @@ void Doctor::printData() {
 	cout << "Specialization: " << specialization << endl;
 }
 
+void Doctor::printBriefInfo() {
+	Human::printBriefInfo();
+}
+
 void Doctor::writeToFile(ostream& out) {
 	Human::writeToFile(out);
 	out << specialization << endl;

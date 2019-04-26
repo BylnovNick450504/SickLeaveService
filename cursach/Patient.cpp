@@ -27,6 +27,10 @@ void Patient::printData() {
 	cout << "Passport number: " << passportNumber << endl;
 }
 
+void Patient::printBriefInfo() {
+	Human::printBriefInfo();
+}
+
 void Patient::enterData() {
 	Human::enterData();
 	cout << "Please enter card number: ";
