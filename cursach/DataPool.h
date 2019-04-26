@@ -20,5 +20,13 @@ public:
 	void retrievePatients();
 	void retrieveSickLists();
 
-	//AbstractEntity createEntity(std::string& type);
+	void writeAllDiseases();
+	void writeAllDoctors();
+	void writeAllPatients();
+	void writeAllSickLists();
+
+	std::vector<Disease*>* getDiseases();
+	std::vector<Doctor*>* getDoctors();
+	std::vector<Patient*>* getPatients();
+	std::vector<SickList*>* getSickLists();
 };

@@ -3,8 +3,8 @@
 
 using namespace std;
 
-DiseaseService::DiseaseService(std::vector<Disease*>* diseases) {
-	this->diseases = diseases;
+DiseaseService::DiseaseService(DataPool* dataPool) {
+	this->diseases = dataPool->getDiseases();
 }
 
 void DiseaseService::addDisease() {
@@ -14,9 +14,19 @@ void DiseaseService::addDisease() {
 }
 
 void DiseaseService::deleteDiseaseById(int id) {
-	for (size_t i = 0; i < diseases->size(); i++) {
-		if (diseases->at(i)->getId() == id) {
-			diseases->erase(diseases->begin() + i);
+	//for (size_t i = 0; i < diseases->size(); i++) {
+	//	if (diseases->at(i)->getId() == id) {
+	//		vector<Disease*>::iterator it = diseases->begin() + i;
+	//		Disease* pointer = *it;
+	//		delete pointer;
+	//		return;
+	//	}
+	//}
+
+	for (vector<Disease*>::iterator it = diseases->begin(); it != diseases->end(); it++) {
+		if ((*it)->getId() == id) {
+			delete (*it);
+			diseases->erase(it);
 			return;
 		}
 	}
@@ -32,7 +42,9 @@ Disease* DiseaseService::findDiseaseById(int id) {
 }
 
 void DiseaseService::getAll() {
+	cout << "------------------------" << endl;
 	for (size_t i = 0; i < diseases->size(); i++) {
-		cout << diseases->at(i);
+		diseases->at(i)->printData();
 	}
+	cout << "------------------------" << endl;
 }

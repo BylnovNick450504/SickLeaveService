@@ -5,11 +5,6 @@
 
 using namespace std;
 
-//AbstractEntity DataPool::createEntity(string& entityType) {
-//	Disease d;
-//	return d;
-//}
-
 DataPool::DataPool() {}
 
 DataPool::~DataPool() {
@@ -102,4 +97,82 @@ void DataPool::getDataFromStorage() {
 	retrieveSickLists();
 }
 
+void DataPool::writeAllDiseases() {
+	string fileName = "d:/test1/diseases.txt";
+	ofstream out(fileName);
+	if (out.is_open()) {
+		int size = diseases.size();
+		out << size << endl;
+		for (int i = 0; i < size; i++) {
+			diseases.at(i)->writeToFile(out);
+		}
+		out.close();
+	}
+	else {
+		cout << "Error open file" << fileName << endl;
+	}
+}
 
+void DataPool::writeAllDoctors() {
+	string fileName = "d:/test1/doctors.txt";
+	ofstream out(fileName);
+	if (out.is_open()) {
+		int size = doctors.size();
+		out << size << endl;
+		for (int i = 0; i < size; i++) {
+			doctors.at(i)->writeToFile(out);
+		}
+		out.close();
+	}
+	else {
+		cout << "Error open file" << fileName << endl;
+	}
+}
+
+void DataPool::writeAllPatients() {
+	string fileName = "d:/test1/patients.txt";
+	ofstream out(fileName);
+	if (out.is_open()) {
+		int size = patients.size();
+		out << size << endl;
+		for (int i = 0; i < size; i++) {
+			patients.at(i)->writeToFile(out);
+		}
+		out.close();
+	}
+	else {
+		cout << "Error open file" << fileName << endl;
+	}
+}
+
+void DataPool::writeAllSickLists() {
+	string fileName = "d:/test1/sickLists.txt";
+	ofstream out(fileName);
+	if (out.is_open()) {
+		int size = sickLists.size();
+		out << size << endl;
+		for (int i = 0; i < size; i++) {
+			sickLists.at(i)->writeToFile(out);
+		}
+		out.close();
+	}
+	else {
+		cout << "Error open file" << fileName << endl;
+	}
+}
+
+vector<Disease*>* DataPool::getDiseases() {
+	return &diseases;
+}
+
+vector<Doctor*>* DataPool::getDoctors() {
+	return &doctors;
+}
+
+vector<Patient*>* DataPool::getPatients() {
+	return &patients;
+}
+
+vector<SickList*>* DataPool::getSickLists() {
+	return &sickLists;
+}
