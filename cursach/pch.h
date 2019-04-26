@@ -17,4 +17,6 @@
 #include "Disease.h"
 #include "DiseaseService.h"
 #include "DataPool.h"
+#include "DoctorService.h"
+#include "PatientService.h"
 #endif //PCH_H
