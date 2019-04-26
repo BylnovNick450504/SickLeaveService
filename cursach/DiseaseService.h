@@ -8,6 +8,7 @@
 class DiseaseService {
 private:
 	std::vector<Disease*>* diseases;
+	DataPool* dataPool;
 
 public:
 	DiseaseService(DataPool* dataPool);
