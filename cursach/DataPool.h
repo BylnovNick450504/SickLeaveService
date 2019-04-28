@@ -5,10 +5,13 @@
 
 class DataPool {
 private:
+	int nextId;
 	std::vector<Disease*> diseases;
 	std::vector<Doctor*> doctors;
 	std::vector<Patient*> patients;
 	std::vector<SickList*> sickLists;
+
+	void retrieveNextId();
 public:
 	DataPool();
 	~DataPool();
@@ -29,4 +32,6 @@ public:
 	std::vector<Doctor*>* getDoctors();
 	std::vector<Patient*>* getPatients();
 	std::vector<SickList*>* getSickLists();
+
+	int getNextId();
 };

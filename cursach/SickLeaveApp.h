@@ -10,8 +10,11 @@ private:
 	DiseaseService* diseaseService;
 	DoctorService* doctorService;
 	PatientService* patientService;
-	SickListService* sickLeaveService;
+	SickListService* sickListService;
 public:
 	SickLeaveApp();
 	~SickLeaveApp();
+	void operateDiseases();
+	void operateDoctors();
+	void operatePatients();
 };

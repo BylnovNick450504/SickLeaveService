@@ -16,7 +16,7 @@ public:
 	int getDiseaseCode();
 	void setDiseaseCode(int diseaseCode);
 
-	void enterData() override;
+	void enterData(int id) override;
 	void printData() override;
 	void printBriefInfo() override;
 

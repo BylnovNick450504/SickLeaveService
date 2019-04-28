@@ -16,7 +16,7 @@ public:
 	std::string getPassportNumber();
 	void setPassportNumber(std::string passportNumber);
 	
-	void enterData() override;
+	void enterData(int id) override;
 	void printData() override;
 	void printBriefInfo() override;
 

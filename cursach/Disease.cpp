@@ -26,8 +26,8 @@ void Disease::setDiseaseCode(int diseaseCode) {
 	this->diseaseCode = diseaseCode;
 }
 
-void Disease::enterData() {
-	AbstractEntity::enterData();
+void Disease::enterData(int id) {
+	AbstractEntity::enterData(id);
 	cout << "Please enter disease name: ";
 	cin >> this->name;
 	cout << "Please enter disease code: ";

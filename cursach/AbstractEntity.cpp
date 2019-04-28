@@ -23,9 +23,8 @@ void AbstractEntity::printData() {
 	cout << "id: " << id << endl;
 }
 
-void AbstractEntity::enterData() {
-	cout << "Please enter id: ";
-	cin >> id;
+void AbstractEntity::enterData(int id) {
+	this->id = id;
 }
 
 void AbstractEntity::writeToFile(ostream& out) {

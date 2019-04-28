@@ -31,8 +31,8 @@ void Patient::printBriefInfo() {
 	Human::printBriefInfo();
 }
 
-void Patient::enterData() {
-	Human::enterData();
+void Patient::enterData(int id) {
+	Human::enterData(id);
 	cout << "Please enter card number: ";
 	cin >> cardNumber;
 	cout << "Please enter passport number: ";

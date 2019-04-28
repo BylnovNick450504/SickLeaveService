@@ -18,8 +18,8 @@ void Doctor::setSpecialization(string specialization) {
 	this->specialization = specialization;
 }
 
-void Doctor::enterData() {
-	Human::enterData();
+void Doctor::enterData(int id) {
+	Human::enterData(id);
 	cout << "Please enter specialization: ";
 	cin >> specialization;
 }

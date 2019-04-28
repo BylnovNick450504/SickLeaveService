@@ -51,7 +51,7 @@
     <ClInclude Include="SickLeaveApp.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="SickLeaveService.h">
+    <ClInclude Include="SickListService.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -95,7 +95,7 @@
     <ClCompile Include="SickLeaveApp.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SickLeaveService.cpp">
+    <ClCompile Include="SickListService.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

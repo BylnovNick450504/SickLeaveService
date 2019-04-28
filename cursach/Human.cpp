@@ -46,8 +46,8 @@ void Human::printBriefInfo() {
 	cout << getId() << " " << name << endl;
 }
 
-void Human::enterData() {
-	AbstractEntity::enterData();
+void Human::enterData(int id) {
+	AbstractEntity::enterData(id);
 	cout << "Please enter name: ";
 	cin >> name;
 	cout << "Please enter email: ";

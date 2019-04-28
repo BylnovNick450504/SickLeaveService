@@ -5,7 +5,9 @@
 
 using namespace std;
 
-DataPool::DataPool() {}
+DataPool::DataPool() {
+	retrieveNextId();
+}
 
 DataPool::~DataPool() {
 	for (size_t i = 0; i < diseases.size(); i++) {
@@ -175,4 +177,29 @@ vector<Patient*>* DataPool::getPatients() {
 
 vector<SickList*>* DataPool::getSickLists() {
 	return &sickLists;
+}
+
+void DataPool::retrieveNextId() {
+	string fileName = "d:/test/nextId.txt";
+	ifstream in(fileName);
+	if (in.is_open()) {
+		in >> nextId;
+	}
+	else {
+		cout << "Error open file: " << fileName << endl;
+	}
+}
+
+int DataPool::getNextId() {
+	int id = nextId++;
+	string fileName = "d:/test/nextId.txt";
+	ofstream out(fileName);
+	if (out.is_open()) {
+		out << nextId << endl;
+		out.close();
+	}
+	else {
+		cout << "Error open file" << fileName << endl;
+	}
+	return id;
 }

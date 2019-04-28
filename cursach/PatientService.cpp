@@ -10,7 +10,7 @@ PatientService::PatientService(DataPool* dataPool) {
 
 void PatientService::addPatient() {
 	Patient* patient = new Patient();
-	patient->enterData();
+	patient->enterData(dataPool->getNextId());
 	patients->push_back(patient);
 }
 

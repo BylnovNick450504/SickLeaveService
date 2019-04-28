@@ -39,6 +39,12 @@ void testDiseaseServiceDelete() {
 	diseaseService.getAll();
 }
 
+void testSickLeaveApp() {
+	SickLeaveApp s;
+	s.operateDiseases();
+
+}
+
 int main() {
-	testDiseaseServiceDelete();
+	testSickLeaveApp();
 }

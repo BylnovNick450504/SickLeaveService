@@ -14,7 +14,7 @@ public:
 	std::string getSpecialization();
 	void setSpecialization(std::string specialization);
 	
-	void enterData() override;
+	void enterData(int id) override;
 	void printData() override;
 	void printBriefInfo() override;
 

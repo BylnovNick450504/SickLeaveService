@@ -10,7 +10,7 @@ DiseaseService::DiseaseService(DataPool* dataPool) {
 
 void DiseaseService::addDisease() {
 	Disease* disease = new Disease();
-	disease->enterData();
+	disease->enterData(dataPool->getNextId());
 	diseases->push_back(disease);
 }
 

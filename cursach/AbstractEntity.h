@@ -12,7 +12,7 @@ public:
 	AbstractEntity(int id);
 	AbstractEntity();
 
-	virtual void enterData();
+	virtual void enterData(int id);
 	virtual void printData();
 	virtual void printBriefInfo() = 0;
 

@@ -20,7 +20,7 @@ public:
 	std::string getPhone();
 	void setPhone(std::string phone);
 
-	void enterData() override;
+	void enterData(int id) override;
 	void printData() override;
 	void printBriefInfo() override;
 

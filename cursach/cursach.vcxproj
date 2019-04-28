@@ -162,7 +162,7 @@
     <ClInclude Include="PatientService.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SickLeaveApp.h" />
-    <ClInclude Include="SickLeaveService.h" />
+    <ClInclude Include="SickListService.h" />
     <ClInclude Include="SickList.h" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +183,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SickLeaveApp.cpp" />
-    <ClCompile Include="SickLeaveService.cpp" />
+    <ClCompile Include="SickListService.cpp" />
     <ClCompile Include="SickList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

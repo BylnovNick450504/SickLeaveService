@@ -19,6 +19,6 @@
 #include "DataPool.h"
 #include "DoctorService.h"
 #include "PatientService.h"
-#include "SickLeaveService.h"
+#include "SickListService.h"
 #include "SickLeaveApp.h"
 #endif //PCH_H
