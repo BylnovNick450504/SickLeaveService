@@ -48,6 +48,12 @@
     <ClInclude Include="PatientService.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="SickLeaveApp.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="SickLeaveService.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -84,6 +90,12 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="PatientService.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SickLeaveApp.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SickLeaveService.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

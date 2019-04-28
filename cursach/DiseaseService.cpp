@@ -25,7 +25,7 @@ void DiseaseService::deleteDiseaseById(int id) {
 }
 
 Disease* DiseaseService::findDiseaseById(int id) {
-	for (int i = 0; i < diseases->size(); i++) {
+	for (size_t i = 0; i < diseases->size(); i++) {
 		if (diseases->at(i)->getId() == id) {
 			return diseases->at(i);
 		}

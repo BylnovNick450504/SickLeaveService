@@ -25,7 +25,7 @@ void PatientService::deletePatientById(int id) {
 }
 
 Patient* PatientService::findPatientById(int id) {
-	for (int i = 0; i < patients->size(); i++) {
+	for (size_t i = 0; i < patients->size(); i++) {
 		if (patients->at(i)->getId() == id) {
 			return patients->at(i);
 		}
