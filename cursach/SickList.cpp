@@ -56,7 +56,12 @@ void SickList::setDescription(string description) {
 
 void SickList::printData() {
 	AbstractEntity::printData();
-	cout << "Please enter doctor id: " << doctorId << endl;
+	cout << "Disease id = " << diseaseId << endl;
+	cout << "Doctor id =  " << doctorId << endl;
+	cout << "Patient id = " << patientId << endl;
+	cout << "Start Date = " << startDate.tm_year << "." << startDate.tm_mon << "." << startDate.tm_mday << endl;
+	cout << "Due Date = " << dueDate.tm_year << "." << dueDate.tm_mon << "." << dueDate.tm_mday << endl;
+	cout << "Description = " << description << endl;
 }
 
 void SickList::printBriefInfo() {

@@ -12,6 +12,7 @@ void DoctorService::addDoctor() {
 	Doctor* doctor = new Doctor();
 	doctor->enterData(dataPool->getNextId());
 	doctors->push_back(doctor);
+	dataPool->writeAllDoctors();
 }
 
 void DoctorService::deleteDoctorById(int id) {
@@ -19,6 +20,7 @@ void DoctorService::deleteDoctorById(int id) {
 		if ((*it)->getId() == id) {
 			delete (*it);
 			doctors->erase(it);
+			dataPool->writeAllDoctors();
 			return;
 		}
 	}

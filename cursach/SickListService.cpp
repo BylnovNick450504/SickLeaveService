@@ -7,10 +7,10 @@ using namespace std;
 
 SickListService::SickListService(DataPool* dataPool, DiseaseService* diseaseService,
 	DoctorService* doctorService, PatientService* patientService) {
-	dataPool = dataPool;
-	diseaseService = diseaseService;
-	doctorService = doctorService;
-	patientService = patientService;
+	this->dataPool = dataPool;
+	this->diseaseService = diseaseService;
+	this->doctorService = doctorService;
+	this->patientService = patientService;
 	sickLists = dataPool->getSickLists();
 }
 
@@ -45,6 +45,7 @@ void SickListService::addSickList() {
 	sickList->setPatientId(patientId);
 	sickList->enterData();
 	sickLists->push_back(sickList);
+	dataPool->writeAllSickLists();
 }
 
 void SickListService::deleteSickListById(int id) {
@@ -52,6 +53,7 @@ void SickListService::deleteSickListById(int id) {
 		if ((*it)->getId() == id) {
 			delete (*it);
 			sickLists->erase(it);
+			dataPool->writeAllSickLists();
 			return;
 		}
 	}

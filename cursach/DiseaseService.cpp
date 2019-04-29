@@ -12,6 +12,7 @@ void DiseaseService::addDisease() {
 	Disease* disease = new Disease();
 	disease->enterData(dataPool->getNextId());
 	diseases->push_back(disease);
+	dataPool->writeAllDiseases();
 }
 
 void DiseaseService::deleteDiseaseById(int id) {
@@ -19,6 +20,7 @@ void DiseaseService::deleteDiseaseById(int id) {
 		if ((*it)->getId() == id) {
 			delete (*it);
 			diseases->erase(it);
+			dataPool->writeAllDiseases();
 			return;
 		}
 	}
