@@ -17,4 +17,6 @@ public:
 	void operateDiseases();
 	void operateDoctors();
 	void operatePatients();
+	void operateSickLists();
+	void operate();
 };

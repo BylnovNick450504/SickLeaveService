@@ -35,6 +35,7 @@ public:
 	void setDescription(std::string description);
 
 	void enterData(int id) override;
+	void enterData();
 	void printData() override;
 	void printBriefInfo() override;
 

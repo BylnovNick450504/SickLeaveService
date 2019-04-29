@@ -41,7 +41,7 @@ void testDiseaseServiceDelete() {
 
 void testSickLeaveApp() {
 	SickLeaveApp s;
-	s.operateDiseases();
+	s.operate();
 
 }
 

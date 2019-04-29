@@ -90,6 +90,26 @@ void SickList::enterData(int id) {
 	cin >> description;
 }
 
+void SickList::enterData() {
+	
+	cout << "Please enter start date year: ";
+	cin >> startDate.tm_year;
+	cout << "Please enter start date month: ";
+	cin >> startDate.tm_mon;
+	cout << "Please enter start date day: ";
+	cin >> startDate.tm_mday;
+
+	cout << "Please enter due date year: ";
+	cin >> dueDate.tm_year;
+	cout << "Please enter due date month: ";
+	cin >> dueDate.tm_mon;
+	cout << "Please enter due date day: ";
+	cin >> dueDate.tm_mday;
+
+	cout << "Please enter description: ";
+	cin >> description;
+}
+
 void SickList::writeToFile(std::ostream& out) {
 	AbstractEntity::writeToFile(out);
 	out << doctorId << "\n"
